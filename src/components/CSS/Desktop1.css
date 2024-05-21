@@ -1,0 +1,23 @@
+span.lin-grad{
+    background: linear-gradient(90deg, rgba(248, 117, 22, 1.00) 0%,rgba(94, 17, 255, 1.00) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+nav {
+    pointer-events: all;
+    opacity: 1;
+}
+button{
+    pointer-events:all;
+}
+div.purchase{
+    pointer-events:all;
+    text-align: center;
+    padding-top: 15px;
+}
+div.purchase:hover{
+background: inherit;
+border: 2px solid aliceblue;
+color: #EEE5FF;
+}

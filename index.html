@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Art For Elementor WordPress Plugin Preview - CodeCanyon</title>
+    <link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/logos-20f56d7ae7a08da2c6698db678490c591ce302aedb1fcd05d3ad1e1484d3caf9.png" as="image" />
+<link rel="preload" href="https://public-assets.envato-static.com/assets/generated_sprites/common-5af54247f3a645893af51456ee4c483f6530608e9c15ca4a8ac5a6e994d9a340.png" as="image" />
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/codecanyon.net/apple-touch-icon-precomposed.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+body{
+  width: 100%;
+  height: 3711px;
+}
+canvas {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    width: 100%;
+    height: 100%;
+    overflow-clip-margin:inherit;
+    box-sizing: border-box;
+    /* Optional background color for canvas */
+}
+#root{
+ width: 100%;
+ pointer-events: none;
+}
+    </style>
+  </head>
+  <body>
+    <canvas id="backgroundCanvas"></canvas>
+  <div id="root">
+  
+  </div>
+  <script>
+    // Variables for parallax effect
+    var scrollFactor = 1; // Adjust this value for desired parallax speed
+    var lastScrollTop = 0;
+    var ticking = false;
+
+    // Parallax effect on scroll
+    window.addEventListener('scroll', function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var scrollFactor = 1; // Adjust this value for desired parallax speed
+            var canvas = document.getElementsByTagName('canvas')[0];
+            canvas.style.transform = 'translateY(' + scrollTop * scrollFactor + 'px)';
+        });
+</script>
+  <script src="script.js"></script>
+
+  <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
